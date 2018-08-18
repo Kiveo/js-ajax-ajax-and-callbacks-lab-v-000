@@ -45,4 +45,4 @@ function showCommits(dataItem) {
   })
 }
 
-// The tests break my urls, so I have included commented functional urls and dummy urls to make the tests happy.
+// The tests break my urls, so I have included commented original urls and uncommented test urls proceed with lab.
