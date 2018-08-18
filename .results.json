@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2018-08-18T06:21:43.594Z",
+    "end": "2018-08-18T06:21:44.263Z",
+    "duration": 669
+  },
+  "tests": [
+    {
+      "title": "has the right elements",
+      "fullTitle": "index.js index.html has the right elements",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "sets the errors div content",
+      "fullTitle": "index.js displayError sets the errors div content",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "calls out to the github search API and displays results",
+      "fullTitle": "index.js ajax functions searchRepositories calls out to the github search API and displays results",
+      "duration": 18,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'http://api.github.com/search/repositories?q=tetris' to match /https:\\/\\/api.github.com\\/search\\/repositories\\?q=tetris/\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toMatch (node_modules/expect/lib/Expectation.js:138:28)\n    at Context.it (test/index-test.js:58:33)",
+        "message": "Expected 'http://api.github.com/search/repositories?q=tetris' to match /https:\\/\\/api.github.com\\/search\\/repositories\\?q=tetris/"
+      }
+    },
+    {
+      "title": "calls the github commits api and displays results",
+      "fullTitle": "index.js ajax functions showCommits calls the github commits api and displays results",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'Commits Found: 1' to match /6dcb09b5b57875f334f61aebed695e2e4193db5e/\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toMatch (node_modules/expect/lib/Expectation.js:138:28)\n    at Context.it (test/index-test.js:69:45)",
+        "message": "Expected 'Commits Found: 1' to match /6dcb09b5b57875f334f61aebed695e2e4193db5e/"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "calls out to the github search API and displays results",
+      "fullTitle": "index.js ajax functions searchRepositories calls out to the github search API and displays results",
+      "duration": 18,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'http://api.github.com/search/repositories?q=tetris' to match /https:\\/\\/api.github.com\\/search\\/repositories\\?q=tetris/\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toMatch (node_modules/expect/lib/Expectation.js:138:28)\n    at Context.it (test/index-test.js:58:33)",
+        "message": "Expected 'http://api.github.com/search/repositories?q=tetris' to match /https:\\/\\/api.github.com\\/search\\/repositories\\?q=tetris/"
+      }
+    },
+    {
+      "title": "calls the github commits api and displays results",
+      "fullTitle": "index.js ajax functions showCommits calls the github commits api and displays results",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'Commits Found: 1' to match /6dcb09b5b57875f334f61aebed695e2e4193db5e/\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toMatch (node_modules/expect/lib/Expectation.js:138:28)\n    at Context.it (test/index-test.js:69:45)",
+        "message": "Expected 'Commits Found: 1' to match /6dcb09b5b57875f334f61aebed695e2e4193db5e/"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "has the right elements",
+      "fullTitle": "index.js index.html has the right elements",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "sets the errors div content",
+      "fullTitle": "index.js displayError sets the errors div content",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
