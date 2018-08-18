@@ -41,7 +41,7 @@ function showCommits(dataItem) {
     console.log(comm_data);
     // $('#details').append('Commits Found: ', comm_data.length); test line
     $('#details').append('First SHA: ', comm_data[0].sha);
-
+    //more details could be included, via iteration or specific reference [0] as above.
   })
 }
 
