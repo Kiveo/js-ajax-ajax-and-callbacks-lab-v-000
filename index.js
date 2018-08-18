@@ -35,7 +35,8 @@ function displayRepositories(dataItem) {
 
 function showCommits(dataItem) {
   // let comm_link = dataItem.commits_url.replace( /{\/sha}/ , '');
-  $.get(comm_link, function(comm_data) {
+  // $.get(comm_link, function(comm_data) {
+  $.get(dataItem.commits_url, function(comm_data) {
     console.log("pre comm data");
     console.log(comm_data);
     $('#details').append('Commits Found: ', comm_data.length);
