@@ -39,7 +39,9 @@ function showCommits(dataItem) {
   $.get('/https:\/\/api.github.com\/repos\/owner\/repo\/commits/', function(comm_data) {
     console.log("pre comm data");
     console.log(comm_data);
-    $('#details').append('Commits Found: ', comm_data.length);
+    // $('#details').append('Commits Found: ', comm_data.length); test line
+    $('#details').append('First SHA: ', comm_data[0].sha);
+
   })
 }
 
