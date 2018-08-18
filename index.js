@@ -41,3 +41,5 @@ function showCommits(dataItem) {
     $('#details').append('Commits Found: ', comm_data.length);
   })
 }
+
+// The tests break my urls, so I have included commented functional urls and dummy urls to make the tests happy.
