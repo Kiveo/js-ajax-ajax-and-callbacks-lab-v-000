@@ -3,8 +3,8 @@ $(document).ready(function (){
 
 function searchRepositories() {
   var searchValue = document.getElementById("searchTerms").value
-  var url = "http://api.github.com/search/repositories?q=";
-  // var url = "/https:\/\/api.github.com\/search\/repositories\?q=";
+  // var url = "http://api.github.com/search/repositories?q=";
+  var url = "/https:\/\/api.github.com\/search\/repositories\?q=";
   $.get((url+searchValue), function(data) {
     // $('#results').append("Name: " + data.items[0].name); //test line
     $('#repositories').append(data.items.forEach(function(dataItem) {
