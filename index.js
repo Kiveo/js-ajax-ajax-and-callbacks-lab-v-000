@@ -27,14 +27,14 @@ function displayRepositories(dataItem) {
   console.log(dataItem);
   console.log('done loading');
   $('#results').append("Name: ", dataItem.name); //username?
-  var comm_link = dataItem.commits_url.replace( /{\/sha}/ , '');
+  let comm_link = dataItem.commits_url.replace( /{\/sha}/ , '');
   $('#results').append("<br>Commits: ", comm_link);
   $('#results').append(`<br><a href=${comm_link}>Commits Link</a>`);
   showCommits(dataItem);
 }
 
 function showCommits(dataItem) {
-  // let comm_link = dataItem.commits_url.replace( /{\/sha}/ , '');
+  let comm_link = dataItem.commits_url.replace( /{\/sha}/ , '');
   $.get(comm_link, function(comm_data) {
     console.log("pre comm data");
     console.log(comm_data);
