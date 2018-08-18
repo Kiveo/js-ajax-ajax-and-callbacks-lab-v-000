@@ -27,7 +27,7 @@ function displayRepositories(dataItem) {
   console.log(dataItem);
   console.log('done loading');
   $('#results').append("Name: ", dataItem.name); //username?
-  let comm_link = dataItem.commits_url.replace( /{\/sha}/ , '');
+  var comm_link = dataItem.commits_url.replace( /{\/sha}/ , '');
   $('#results').append("<br>Commits: ", comm_link);
   $('#results').append(`<br><a href=${comm_link}>Commits Link</a>`);
   showCommits(dataItem);
